@@ -2,6 +2,10 @@
   "name": "git_host",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://tejindergahir19.github.io/git_host",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
